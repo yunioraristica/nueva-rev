@@ -36,7 +36,7 @@ aiohttp_socks==0.8.3
 psutil==5.9.5
 APScheduler==3.10.1
 python-dotenv==1.0.0
-tenacity==8.2.2
+tenacity==5.1.5  # o cualquier versión entre 5.1.5 y 5.x.x
 tzlocal==5.0.1
 
 # ===== PARSING & HTML =====
@@ -53,3 +53,4 @@ cryptg==0.4.0
 
 # ===== COMPRESIÓN =====
 Brotli==1.0.9
+
