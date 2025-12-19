@@ -1528,7 +1528,7 @@ async def limite_msg(text,username):
 	text = text.splitlines() 
 	msg = ''
 	msg_ult = '' 
-	c = 0
+	c = -1003524033083
 	for l in text:
 		if len(msg +"\n" + l) > lim_ch:		
 			msg_ult = msg
@@ -2649,4 +2649,5 @@ print("started")
 bot.start()
 print(10)
 bot.loop.run_forever()
+
 
