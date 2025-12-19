@@ -1,82 +1,114 @@
-aiofiles
-aiohttp_socks
-requests[socks]
-aiosignal==1.3.1
-anyio==3.6.2
-APScheduler==3.6.3
-asks==3.0.0
-async-generator==1.10
-async-timeout==4.0.2
-attrs==22.1.0
-beautifulsoup4==4.11.1
-Brotli==1.0.9
-bs4==0.0.1
+# ===== DEPENDENCIAS CORE ACTUALIZADAS =====
+# aiohttp y componentes (CORREGIDOS para evitar errores de compilación)
+aiofiles==23.2.1
+aiohttp==3.9.1
+aiosignal==1.4.0
+anyio==3.7.1
+async-timeout==4.0.3
+attrs==23.2.0
+frozenlist==1.4.0  # ¡VERSIÓN CORREGIDA! (era 1.3.3)
+multidict==6.0.4
+yarl==1.9.3
 
-certifi==2022.9.24
-cffi==1.15.1
-charset-normalizer==2.1.1
-click==8.1.3
-colorama==0.4.6
-cryptg==0.4.0
-exceptiongroup==1.0.4
-frozenlist==1.3.3
-googledrivedownloader==0.4
-h11==0.14.0
-idna==3.4
-inflate64==0.3.1
-lxml==4.9.2
-mega==0.2.11
-mega.py==1.0.8
-multidict==6.0.2
-multivolumefile==0.2.3
-mutagen==1.46.0
-outcome==1.2.0
-pathlib==1.0.1
-ping3==4.0.4
-prettytable==3.5.0
-psutil==5.9.4
-py7zr==0.20.2
-pyaes==1.6.1
-pyasn1==0.4.8
-pybcj==1.0.1
-pycparser==2.21
-pycryptodome==3.16.0
-pycryptodomex==3.15.0
-
-pyping==0.0.6
-pyppmd==1.0.0
-Pyrogram==2.0.62
-PySocks==1.7.1
-python-socks==2.0.3
-python-telegram-bot==13.15
-pytz==2022.6
-pytz-deprecation-shim==0.1.0.post0
-pyzstd==0.15.3
-requests==2.28.1
-
-rsa==4.9
-six==1.16.0
-sniffio==1.3.0
-sortedcontainers==2.4.0
-soupsieve==2.3.2.post1
-tcping==0.1.1rc1
-telebot==0.0.4
-Telethon==1.25.4
-tenacity==5.1.5
-texttable==1.6.7
+# ===== TELEGRAM BOTS =====
+Telethon==1.34.0  # Actualizado desde 1.25.4
+Pyrogram==2.0.106  # Actualizado desde 2.0.62
 TgCrypto==1.2.3
-tornado==6.1
-trio==0.22.0
-tzdata==2022.7
-tzlocal==4.2
-ujson==5.5.0
-urllib3==1.26.13
-user-agent==0.1.10
-wcwidth==0.2.5
-websockets==10.4
-yarl==1.8.1
-youtube-dl==2021.12.17
-yt-dlp==2022.11.11
-Flask==2.2.2
-gunicorn==20.1.0
+python-telegram-bot==20.7  # Actualizado desde 13.15 (MAJOR UPDATE!)
+# telebot==0.0.4  # ELIMINADO: conflictúa con python-telegram-bot
 
+# ===== WEB & SERVER =====
+Flask==2.3.3  # Actualizado desde 2.2.2
+gunicorn==21.2.0  # Actualizado desde 20.1.0
+Werkzeug==2.3.7
+
+# ===== HTTP & REQUESTS =====
+requests==2.31.0  # Actualizado desde 2.28.1
+aiohttp_socks==0.8.4
+requests[socks]==2.31.0
+urllib3==2.0.7  # Actualizado desde 1.26.13
+charset-normalizer==3.3.2
+idna==3.4
+certifi==2023.7.22
+
+# ===== DOWNLOADERS & MEDIA =====
+yt-dlp==2023.11.16  # Actualizado desde 2022.11.11
+youtube-dl==2023.7.6  # Actualizado desde 2021.12.17
+mutagen==1.47.0  # Actualizado desde 1.46.0
+
+# ===== CRYPTO & SEGURIDAD =====
+pycryptodomex==3.19.0  # Actualizado desde 3.15.0
+cryptg==0.4.0
+rsa==4.9
+pyaes==1.6.1
+
+# ===== SCHEDULING & ASYNC =====
+APScheduler==3.10.4  # Actualizado desde 3.6.3
+async-generator==1.10
+asks==3.0.0
+trio==0.22.2
+sniffio==1.3.0
+exceptiongroup==1.1.3  # Actualizado desde 1.0.4
+
+# ===== SYSTEM & UTILITIES =====
+psutil==5.9.6  # Actualizado desde 5.9.4
+tenacity==8.2.3  # Actualizado desde 5.1.5
+prettytable==3.9.0  # Actualizado desde 3.5.0
+sortedcontainers==2.4.0
+colorama==0.4.6
+click==8.1.7  # Actualizado desde 8.1.3
+wcwidth==0.2.6  # Actualizado desde 0.2.5
+
+# ===== PARSING & HTML =====
+beautifulsoup4==4.12.2  # Actualizado desde 4.11.1
+lxml==4.9.3  # Actualizado desde 4.9.2
+soupsieve==2.5  # Actualizado desde 2.3.2.post1
+bs4==0.0.2  # Actualizado desde 0.0.1
+
+# ===== COMPRESSION & ARCHIVES =====
+Brotli==1.1.0  # Actualizado desde 1.0.9
+py7zr==0.20.7  # Actualizado desde 0.20.2
+pybcj==1.0.1
+pyppmd==1.1.0  # Actualizado desde 1.0.0
+pyzstd==0.15.9  # Actualizado desde 0.15.3
+inflate64==0.3.1
+
+# ===== CLOUD STORAGE =====
+mega.py==1.1.0  # Actualizado desde 1.0.8
+mega==1.0.2  # Actualizado desde 0.2.11
+googledrivedownloader==0.4
+multivolumefile==0.2.3
+
+# ===== NETWORKING =====
+websockets==12.0  # Actualizado desde 10.4
+python-socks==2.2.0  # Actualizado desde 2.0.3
+PySocks==1.7.1
+tcping==0.1.1rc1
+ping3==4.0.4
+pyping==0.0.6
+
+# ===== SERIALIZATION =====
+ujson==5.8.0  # Actualizado desde 5.5.0
+
+# ===== COMPILATION =====
+cffi==1.16.0  # Actualizado desde 1.15.1
+pycparser==2.21
+
+# ===== DATES & TIMEZONES =====
+pytz==2023.3  # Actualizado desde 2022.6
+pytz-deprecation-shim==0.1.0.post0
+tzdata==2023.3  # Actualizado desde 2022.7
+tzlocal==5.0.1  # Actualizado desde 4.2
+
+# ===== OTROS =====
+six==1.16.0
+outcome==1.2.0
+h11==0.14.0
+texttable==1.6.7
+tornado==6.3.3  # Actualizado desde 6.1
+user-agent==0.1.10
+pyasn1==0.5.0  # Actualizado desde 0.4.8
+
+# ===== ELIMINADOS (OBSOLETOS/REDUNDANTES) =====
+# pathlib==1.0.1  # INNECESARIO: incluido en Python 3.4+
+# pycryptodome==3.16.0  # REDUNDANTE: usa pycryptodomex
