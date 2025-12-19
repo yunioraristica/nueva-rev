@@ -42,6 +42,7 @@ tzlocal==5.0.1
 # ===== PARSING & HTML =====
 beautifulsoup4==4.12.2
 lxml==4.9.3
+html5lib==1.1
 
 # ===== ARCHIVOS & SERIALIZACIÓN =====
 aiofiles==23.2.1
@@ -53,4 +54,5 @@ cryptg==0.4.0
 
 # ===== COMPRESIÓN =====
 Brotli==1.0.9
+
 
