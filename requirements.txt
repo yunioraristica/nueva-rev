@@ -74,7 +74,7 @@ pyzstd==0.15.9  # Actualizado desde 0.15.3
 inflate64==0.3.1
 
 # ===== CLOUD STORAGE =====
-mega.py==1.1.0  # Actualizado desde 1.0.8
+mega.py==1.0.8  # Actualizado desde 1.0.8
 mega==1.0.2  # Actualizado desde 0.2.11
 googledrivedownloader==0.4
 multivolumefile==0.2.3
@@ -112,4 +112,5 @@ pyasn1==0.5.0  # Actualizado desde 0.4.8
 # ===== ELIMINADOS (OBSOLETOS/REDUNDANTES) =====
 # pathlib==1.0.1  # INNECESARIO: incluido en Python 3.4+
 # pycryptodome==3.16.0  # REDUNDANTE: usa pycryptodomex
+
 
