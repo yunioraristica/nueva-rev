@@ -4,12 +4,12 @@ Pyrogram==2.0.106
 TgCrypto==1.2.3
 python-telegram-bot==20.7
 
-# ===== AIOHTTP (CORREGIDO PARA ERROR frozenlist) =====
+# ===== AIOHTTP (VERSIÓN COMPATIBLE) =====
 aiohttp==3.8.6
 aiosignal==1.3.1
 frozenlist==1.4.0
 multidict==6.0.4
-yarl==1.9.2
+yarl==1.8.2  # ¡CAMBIADO! 1.9.2 es muy nueva para aiohttp 3.8.6
 async-timeout==4.0.3
 attrs==23.1.0
 
@@ -22,9 +22,14 @@ mega.py==1.0.8
 # ===== WEB & SERVER =====
 Flask==2.3.2
 gunicorn==20.1.0
+Werkzeug==2.3.7
 
-# ===== HTTP & REQUESTS =====
-requests==2.31.0
+# ===== HTTP & REQUESTS (VERSIÓN COMPATIBLE) =====
+requests==2.28.2  # ¡CAMBIADO! 2.31.0 causa conflictos
+urllib3==1.26.18  # ¡AGREGADO! Necesario para requests 2.28.2
+certifi==2023.7.22  # ¡AGREGADO! Para SSL
+charset-normalizer==2.1.1  # ¡AGREGADO! Para requests
+idna==3.4  # ¡AGREGADO! Para requests
 aiohttp_socks==0.8.3
 
 # ===== UTILIDADES DEL SISTEMA =====
@@ -32,6 +37,7 @@ psutil==5.9.5
 APScheduler==3.10.1
 python-dotenv==1.0.0
 tenacity==8.2.2
+tzlocal==5.0.1  # ¡AGREGADO! Necesario para APScheduler
 
 # ===== PARSING & HTML =====
 beautifulsoup4==4.12.2
